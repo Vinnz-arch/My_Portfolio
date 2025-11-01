@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+@theme {
+  --font-Zeyada: "Zeyada", cursive;
+}
+

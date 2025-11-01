@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+</head>
+<body>
+  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        
+        <!-- Logo / Name -->
+        <a href="#" class="text-5xl font-bold font-Zeyada text-blue-600">Vinns<span class="text-gray-800">RVS</span></a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+          <a href="#home" class="hover:text-blue-600 transition">Home</a>
+          <a href="#about" class="hover:text-blue-600 transition">About</a>
+          <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+          <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+        </nav>
+
+        <!-- Contact Number -->
+         <nav>
+            <a href="tel:+1234567890" class="hidden md:inline-block text-gray-700 hover:text-blue-600">
+                +63 9513217341
+            </a>
+         </nav>
+
+        <!-- Mobile Button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none text-gray-700 hover:text-blue-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <nav class="px-4 py-3 space-y-2">
+        <a href="#home" class="block text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#about" class="block text-gray-700 hover:text-blue-600">About</a>
+        <a href="#projects" class="block text-gray-700 hover:text-blue-600">Projects</a>
+        <a href="#contact" class="block text-gray-700 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- JavaScript for Menu Toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Example content to show scroll -->
+  <main class="pt-24 text-center">
+    
+    <section id="home" class="flex flex-col items-center justify-center min-h-screen text-center px-6 bg-stars">
+        <div class="rounded-full w-61 h-61 mb-6 bg-blue-600 flex items-center justify-center">
+            <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/573517078_1167378455523356_2422418623417062681_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFrM1idxjsgCqxlHHia1Wl1c1ZnlEkUTOVzVmeUSRRM5WWWzCfTyvZ-dUakMOdnjoikV4AyYcJ5epN1StF3thfW&_nc_ohc=LBFjNsFlIE0Q7kNvwE7ZDe5&_nc_oc=AdlJavKEbCXkMCeo8Y37OqqEse9eOuLUuCNaDMa9njcfPtMnLR3h-EnC6NITOqE_egw&_nc_zt=23&_nc_ht=scontent-mnl1-1.xx&_nc_gid=hLRf2ckGvxpE7NqYQwZcHQ&oh=00_AffM0H7GgAN0nMza-Df5c6YOwqFK73PnKo-Zlq9rQchbLg&oe=690A06F9" alt="Earl Vincent" class="w-60 h-60 rounded-full">
+        </div>
+        <h1 class="font-Zeyada text-6xl text-blue-600 mb-2">Hello! I’m Earl Vincent</h1>
+        <h2 class="text-2xl font-semibold mb-4">Aspiring IT Professional</h2>
+        <p class="max-w-xl text-lg text-gray-600 mb-6">
+        Passionate about creating <span class="text-blue-600 font-medium">modern websites</span> 
+        and developing efficient <span class="text-blue-600 font-medium">backend systems</span> 
+        that bring ideas to life through code and creativity.
+        </p>
+        <div class="flex space-x-6">
+            <i data-lucide="github" class="w-12 h-12 text-blue-600 transition-transform duration-300 hover:scale-125 cursor-pointer"></i>
+            <i data-lucide="linkedin" class="w-12 h-12 text-blue-600 transition-transform duration-300 hover:scale-125 cursor-pointer"></i>
+            <i data-lucide="facebook" class="w-12 h-12 text-blue-600 transition-transform duration-300 hover:scale-125 cursor-pointer"></i>
+        </div>
+
+    </section>
+    <section id="about" class="h-screen flex items-center justify-center bg-blue-50">
+      <h2 class="text-3xl font-semibold text-gray-800">About Me</h2>
+    </section>
+    <section id="projects" class="h-screen flex items-center justify-center bg-gray-100">
+      <h2 class="text-3xl font-semibold text-gray-800">My Projects</h2>
+    </section>
+    <section id="contact" class="h-screen flex items-center justify-center bg-blue-100">
+      <h2 class="text-3xl font-semibold text-gray-800">Contact Me</h2>
+    </section>
+  </main>
+
+    <script>
+      lucide.createIcons();
+    </script>
+
+
+</body>
+</html>
