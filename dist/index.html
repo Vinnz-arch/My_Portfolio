@@ -9,6 +9,24 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
 
+ <style>
+    /* Custom typewriter animation */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 18% }
+    }
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    .typewriter {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid black;
+      animation: typing 5s steps(30, end), blink 0.7s step-end infinite;
+    }
+  </style>
+
 </head>
 <body>
   <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
@@ -69,10 +87,10 @@
     
     <section id="home" class="flex flex-col items-center justify-center min-h-screen text-center px-6 bg-stars">
         <div class="rounded-full w-61 h-61 mb-6 bg-blue-600 flex items-center justify-center">
-            <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/573517078_1167378455523356_2422418623417062681_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFrM1idxjsgCqxlHHia1Wl1c1ZnlEkUTOVzVmeUSRRM5WWWzCfTyvZ-dUakMOdnjoikV4AyYcJ5epN1StF3thfW&_nc_ohc=LBFjNsFlIE0Q7kNvwE7ZDe5&_nc_oc=AdlJavKEbCXkMCeo8Y37OqqEse9eOuLUuCNaDMa9njcfPtMnLR3h-EnC6NITOqE_egw&_nc_zt=23&_nc_ht=scontent-mnl1-1.xx&_nc_gid=hLRf2ckGvxpE7NqYQwZcHQ&oh=00_AffM0H7GgAN0nMza-Df5c6YOwqFK73PnKo-Zlq9rQchbLg&oe=690A06F9" alt="Earl Vincent" class="w-60 h-60 rounded-full">
+            <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/573517078_1167378455523356_2422418623417062681_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFrM1idxjsgCqxlHHia1Wl1c1ZnlEkUTOVzVmeUSRRM5WWWzCfTyvZ-dUakMOdnjoikV4AyYcJ5epN1StF3thfW&_nc_ohc=Bp_vKSk2OXwQ7kNvwFmHuMn&_nc_oc=AdnqdsXQARK_Sphpffo6eGuCkluqfzez_3aBrSZMEJAjcNGFBoNVadGWFJk1Uk9P80Q&_nc_zt=23&_nc_ht=scontent-mnl1-1.xx&_nc_gid=l9wNchTLYpmTBIPsCHE6Fw&oh=00_AfjDNozp7Z4Iatt98HH3yMqJR4caXI2pWtt00Az1dUbWVg&oe=6913B1F9" alt="Earl Vincent" class="w-60 h-60 rounded-full">
         </div>
-        <h1 class="font-Zeyada text-6xl text-blue-600 mb-2">Hello! I’m Earl Vincent</h1>
-        <h2 class="text-2xl font-semibold mb-4">Aspiring IT Professional</h2>
+        <h1 class="font-Zeyada text-6xl text-blue-600 mb-2 font-bold">Hello! I’m Earl Vincent</h1>
+        <h2 class="typewriter text-2xl font-semibold mb-4">Aspiring IT Professional</h2>
         <p class="max-w-xl text-lg text-gray-600 mb-6">
         Passionate about creating <span class="text-blue-600 font-medium">modern websites</span> 
         and developing efficient <span class="text-blue-600 font-medium">backend systems</span> 
@@ -85,9 +103,169 @@
         </div>
 
     </section>
-    <section id="about" class="h-screen flex items-center justify-center bg-blue-50">
-      <h2 class="text-3xl font-semibold text-gray-800">About Me</h2>
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+
+        <!-- Profile Image -->
+        <div class="flex-shrink-0 rounded-2xl shadow-lg border-4 border-blue-600">
+          <img src="https://scontent-mnl3-3.xx.fbcdn.net/v/t39.30808-6/562364253_4354358788126901_4281661370754717730_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHfbAOZFPX3cAmBjDT4VPHrK7PT6FkSF6Ars9PoWRIXoJH84aJWFuxF08LCJmyyfo9z75bw1meEzqM4phu72mLZ&_nc_ohc=yplUyVffk6AQ7kNvwF8hmTZ&_nc_oc=Adnk-kMADFEDie5rRP4-AG5PF-OWaSiB4U_15D6ZbL5saVVnFOkRtN2DIUOSuLJWYFA&_nc_zt=23&_nc_ht=scontent-mnl3-3.xx&_nc_gid=miRolcNTlMCKWRaDCM6Zaw&oh=00_AfjyBblIT5XKlxQIZu9NK4IvauhWiQvMeFym038h9ZU4qg&oe=6913BCEB" alt="Earl Vincent1" class="w-68 h-68 rounded-xl">
+        </div>
+      
+        <!-- About Content -->
+        <div class="flex-1 text-center md:text-left">
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">About Me</h2>
+          <h3 class="text-xl font-semibold text-blue-600 mb-4">Aspiring IT Professional</h3>
+        
+          <!-- Info Cards -->
+          <div class="flex flex-col sm:flex-row gap-4 mb-6">
+            <div class="flex-1 border rounded-2xl p-4 shadow-sm hover:shadow-md transition">
+              <div class="flex flex-col items-center sm:items-center justify-center text-center">
+                <i data-lucide="briefcase" class="w-12 h-12"></i>
+                <h4 class="font-semibold text-gray-800 ">Experience</h4>
+                <p class="text-gray-600 text-sm">Project-based learning<br>and backend development</p>
+              </div>
+            </div>
+          
+            <div class="flex-1 border rounded-2xl p-4 shadow-sm hover:shadow-md transition">
+              <div class="flex flex-col items-center sm:items-center justify-center text-center">
+                <i data-lucide="academic-cap" class="w-12 h-12">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                  </svg>
+                </i>
+                <h4 class="font-semibold text-gray-800">Education</h4>
+                <p class="text-gray-600 text-sm">
+                  BS in Information Technology<br>
+                  Filamer Christian University
+                </p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Description -->
+          <p class="text-gray-600 leading-relaxed">
+            Hi, I'm <span class="font-semibold text-gray-900">Earl Vincent</span> — passionate about creating 
+            <span class="text-blue-600 font-medium">modern websites</span> and developing efficient 
+            <span class="text-blue-600 font-medium">backend systems</span> that turn ideas into digital experiences. 
+            I enjoy learning new technologies, exploring web design trends, and continuously improving my development skills.
+          </p>
+        </div>
+      </div>
+      <div class="py-16 bg-white text-gray-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+          <p class="text-sm text-gray-500 mb-2"></p>
+          <h2 class="text-4xl font-extrabold mb-10">My <span class="text-blue-600">Skills</span></h2>
+        
+          <div class="grid md:grid-cols-2 gap-8 text-left">
+            <!-- Frontend Skills -->
+             <div class="border rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+                <h3 class="text-2xl font-semibold mb-6 text-center md:text-left">Frontend Skills</h3>
+            
+                <div class="mb-5">
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">HTML</span>
+                    <span class="text-sm text-gray-500">85%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
+                    <div class="progress-bar bg-blue-500 h-2.5 rounded-full w-0" data-width="85%"></div>
+                  </div>
+                </div>
+              
+                <div class="mb-5">
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">CSS</span>
+                    <span class="text-sm text-gray-500">80%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
+                    <div class="progress-bar bg-blue-500 h-2.5 rounded-full w-0" data-width="80%"></div>
+                  </div>
+                </div>
+              
+                <div class="mb-5">
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">JavaScript</span>
+                    <span class="text-sm text-gray-500">70%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
+                    <div class="progress-bar bg-blue-500 h-2.5 rounded-full w-0" data-width="70%"></div>
+                  </div>
+                </div>
+              
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">Tailwind CSS</span>
+                    <span class="text-sm text-gray-500">75%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
+                    <div class="progress-bar bg-blue-500 h-2.5 rounded-full w-0" data-width="75%"></div>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Backend Skills -->
+              <div class="border rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+                <h3 class="text-2xl font-semibold mb-6 text-center md:text-left">Backend Skills</h3>
+              
+                <div class="mb-5">
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">Laravel</span>
+                    <span class="text-sm text-gray-500">60%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
+                    <div class="progress-bar bg-blue-500 h-2.5 rounded-full w-0" data-width="60%"></div>
+                  </div>
+                </div>
+              
+                <div class="mb-5">
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">Django</span>
+                    <span class="text-sm text-gray-500">55%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
+                    <div class="progress-bar bg-blue-500 h-2.5 rounded-full w-0" data-width="55%"></div>
+                  </div>
+                </div>
+              
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">Git</span>
+                    <span class="text-sm text-gray-500">70%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
+                    <div class="progress-bar bg-blue-500 h-2.5 rounded-full w-0" data-width="70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          <p class="text-gray-500 text-sm mt-8 italic text-center">
+            Continuously improving my skills and exploring modern web technologies.
+          </p>
+        </div>    
+      </div>
     </section>
+
+  <!-- 🔥 Animation Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const progressBars = document.querySelectorAll(".progress-bar");
+      
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const bar = entry.target;
+              const width = bar.getAttribute("data-width");
+              bar.style.transition = "width 2s ease-out";
+              bar.style.width = width;
+              observer.unobserve(bar);
+            }
+          });
+        }, { threshold: 0.4 });
+      
+        progressBars.forEach(bar => observer.observe(bar));
+      });
+    </script>
+
     <section id="projects" class="h-screen flex items-center justify-center bg-gray-100">
       <h2 class="text-3xl font-semibold text-gray-800">My Projects</h2>
     </section>
