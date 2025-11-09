@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="output.css">
     <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -25,6 +25,9 @@
       border-right: 3px solid black;
       animation: typing 5s steps(30, end), blink 0.7s step-end infinite;
     }
+
+
+
   </style>
 
 </head>
@@ -47,7 +50,7 @@
         <!-- Contact Number -->
          <nav>
             <a href="tel:+1234567890" class="hidden md:inline-block text-gray-700 hover:text-blue-600">
-                +63 9513217341
+                Download CV
             </a>
          </nav>
 
@@ -83,7 +86,7 @@
   </script>
 
   <!-- Example content to show scroll -->
-  <main class="pt-24 text-center">
+  <main class="pt-24  text-center">
     
     <section id="home" class="flex flex-col items-center justify-center min-h-screen text-center px-6 bg-stars">
         <div class="rounded-full w-61 h-61 mb-6 bg-blue-600 flex items-center justify-center">
@@ -266,12 +269,89 @@
       });
     </script>
 
-    <section id="projects" class="h-screen flex items-center justify-center bg-gray-100">
-      <h2 class="text-3xl font-semibold text-gray-800">My Projects</h2>
+    <section id="projects" class="py-20 bg-white">
+      <div class="text-center mb-12">
+        <p class="text-gray-500">Browse My Recent</p>
+        <h2 class="text-4xl font-bold text-gray-900">Projects</h2>
+      </div>
+    
+      <!-- Projects Container -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+        <!-- Project Card 1 -->
+        <div class="bg-white rounded-3xl shadow-md hover:shadow-xl transition p-6 flex flex-col items-center">
+          <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1114445501.jpg" alt="Project One" class="rounded-2xl mb-6">
+          <h3 class="text-xl font-bold mb-4">Project One</h3>
+          <div class="flex gap-4">
+            <a href="#" class="px-6 py-2 border border-black rounded-full hover:bg-blue-600 hover:text-white transition">GitHub</a>
+            <a href="#" class="px-6 py-2 border border-black rounded-full hover:bg-blue-600 hover:text-white transition">Preview</a>
+          </div>
+        </div>
+      
+        <!-- Project Card 2 -->
+        <div class="bg-white rounded-3xl shadow-md hover:shadow-xl transition p-6 flex flex-col items-center">
+          <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1114445501.jpg" alt="Project Two" class="rounded-2xl mb-6">
+          <h3 class="text-xl font-bold mb-4">Project Two</h3>
+          <div class="flex gap-4">
+            <a href="#" class="px-6 py-2 border border-black rounded-full hover:bg-blue-600 hover:text-white transition">GitHub</a>
+            <a href="#" class="px-6 py-2 border border-black rounded-full hover:bg-blue-600 hover:text-white transition">Preview</a>
+          </div>
+        </div>
+      
+        <!-- Project Card 3 -->
+        <div class="bg-white rounded-3xl shadow-md hover:shadow-xl transition p-6 flex flex-col items-center">
+          <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1114445501.jpg" alt="Project Three" class="rounded-2xl mb-6">
+          <h3 class="text-xl font-bold mb-4">Project Three</h3>
+          <div class="flex gap-4">
+            <a href="#" class="px-6 py-2 border border-black rounded-full hover:bg-blue-600 hover:text-white transition">GitHub</a>
+            <a href="#" class="px-6 py-2 border border-black rounded-full hover:bg-blue-600 hover:text-white transition">Preview</a>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="contact" class="h-screen flex items-center justify-center bg-blue-100">
-      <h2 class="text-3xl font-semibold text-gray-800">Contact Me</h2>
+
+<!-- Contact Section -->
+    <section id="contact" class="min-h-screen flex flex-col items-center justify-center bg-white text-center px-6">
+      <h3 class="text-gray-500 mb-2 text-sm uppercase tracking-wide">Get In Touch</h3>
+      <h1 class="text-4xl font-bold text-gray-900 mb-10">Contact Me</h1>
+    
+      <!-- Contact Box -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 border border-gray-300 rounded-full px-6 py-4 shadow-sm hover:shadow-md transition-all duration-300 w-full sm:w-[500px]">
+
+        <!-- Email -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=earlvincentpanrev@gmail.com" 
+           class="flex items-center gap-3 text-gray-700 hover:text-black transition duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+            <path d="M2.25 4.5A2.25 2.25 0 0 1 4.5 2.25h15a2.25 2.25 0 0 1 2.25 2.25v15a2.25 2.25 0 0 1-2.25 2.25h-15A2.25 2.25 0 0 1 2.25 19.5v-15zM4.5 6l7.5 6 7.5-6" />
+          </svg>
+          <span class="text-sm sm:text-base">earlvincentpanrev@gmail.com</span>
+        </a>
+      
+        <div class="hidden sm:block w-px h-6 bg-gray-300"></div>
+      
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/earl-vincent-revicencio-07ab20356/" target="_blank"
+           class="flex items-center gap-3 text-gray-700 hover:text-black transition duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+            <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4v13h-4V8zm7.5 0h3.8v1.8h.05c.53-.95 1.82-1.95 3.75-1.95 4 0 4.7 2.63 4.7 6V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.97V21h-4V8z"/>
+          </svg>
+          <span class="text-sm sm:text-base">LinkedIn</span>
+        </a>
+      </div>
+    
+      <!-- Footer -->
+      <footer class="mt-16 text-gray-500 text-sm border-t border-gray-200 w-full pt-4">
+        <div class="flex justify-center gap-8">
+          <a href="#about" class="hover:text-black">About</a>
+          <a href="#projects" class="hover:text-black">Projects</a>
+          <a href="#contact" class="hover:text-black">Contact</a>
+        </div>
+        <p class="mt-4 text-xs">&copy; 2025 Earl Vincent. All Rights Reserved.</p>
+      </footer>
     </section>
+
+
+
+
   </main>
 
     <script>
